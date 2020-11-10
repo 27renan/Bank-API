@@ -2,7 +2,8 @@ import express from 'express'
 import mongoose from 'mongoose'
 import accountsRouter from './routes/accounts.js'
 // Usado para encapsular variaveis 
-require('dotenv').config()
+import dotenv from 'dotenv'
+dotenv.config()
 
 // cria uma instancia do express
 const app = express()
