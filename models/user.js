@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 
+// Schema utilizado no mongoDB
 const userShema = mongoose.Schema({
   agencia:{
     type: Number,
