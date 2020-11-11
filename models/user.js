@@ -17,7 +17,7 @@ const userShema = mongoose.Schema({
   balance: {
     type: Number,
     required: true,
-    //Valida se o balance inserido é menor que zero
+    //Função para verificar se o balance inserido é menor que zero.
     validate(balance) {
       if ( balance < 0) throw new Error('Valor negativo para nota');
     },
